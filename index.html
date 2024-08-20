@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Primeira Página Web</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p id="mensagem">Esta é minha primeira página web.</p>
+    <button id="botao">Clique aqui</button>
+
+    <style>
+         body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+p {
+    color: #666;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</body>
+
+<script>
+ document.getElementById('botao').onclick = function() {
+    document.getElementById('mensagem').innerHTML = 'Você clicou no botão!';
+};
+</script>
+</html>
